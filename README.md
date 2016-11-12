@@ -7,3 +7,4 @@ between values 0 to 60
 
 Donwload the python script and save wherever you want, then add a new startup application called 
 activeOrNot or the name you want and add the command "python path/to/script/brightAndBlockIndicatorScript.py &"
+
