@@ -8,7 +8,7 @@ from gi.repository import AppIndicator3 as appindicator
 APPINDICATOR_ID = 'activeOrNot'
 
 def main():
-    indicator = appindicator.Indicator.new(APPINDICATOR_ID, os.path.abspath('~/projects/indicator/icon.svg'), appindicator.IndicatorCategory.SYSTEM_SERVICES)
+    indicator = appindicator.Indicator.new(APPINDICATOR_ID, os.path.abspath('path/to/icon.svg'), appindicator.IndicatorCategory.SYSTEM_SERVICES)
     indicator.set_status(appindicator.IndicatorStatus.ACTIVE)
     indicator.set_menu(build_menu())
     #notify.init(APPINDICATOR_ID)
