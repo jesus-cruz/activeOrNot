@@ -5,10 +5,10 @@ from gi.repository import AppIndicator3 as appindicator
 #from gi.repository import Notify as notify
 # Notify is disabled due to the option -t(time) not working
 
-APPINDICATOR_ID = 'BrightnessAndBlock'
+APPINDICATOR_ID = 'activeOrNot'
 
 def main():
-    indicator = appindicator.Indicator.new(APPINDICATOR_ID, os.path.abspath('/home/jesus/projects/indicator/method-draw-image.svg'), appindicator.IndicatorCategory.SYSTEM_SERVICES)
+    indicator = appindicator.Indicator.new(APPINDICATOR_ID, os.path.abspath('~/projects/indicator/icon.svg'), appindicator.IndicatorCategory.SYSTEM_SERVICES)
     indicator.set_status(appindicator.IndicatorStatus.ACTIVE)
     indicator.set_menu(build_menu())
     #notify.init(APPINDICATOR_ID)
